@@ -85,7 +85,7 @@ curl http://<host:ip>/weather/london/17670812/0900/temperature
 ## Questions
 
 * If I wanted the temperature in Kelvin rather than celcius, how could I specify this in API calls?
-I think one way would be stablishing by default the temperature in Celsius and if the client wants the temperature in Kelvin we could offer is by adding kelvin attribute in the url, for example: ```http://<host:ip>/weather/london/<date>/<hour minute>/temperature/kelvin```
+I think one way would be stablishing by default the temperature in Celsius and if the client wants the temperature in Kelvin we could offer it by adding kelvin attribute in the url, for example: ```http://<host:ip>/weather/london/<date>/<hour minute>/temperature/kelvin```
 * How would you test this REST service?
 For testing python code I would use pytest, and a more complete tool such SonarQube for automated testing.
 * How would you check the code coverage of your tests?
@@ -103,7 +103,7 @@ Using **Flask-JWT**, you have this option already implemented in the actual API.
     }
     ```
     
-    * After that copy your access token, and goes to **``` http://<host:ip>/weather/london/restricted/<date>/<hour minute> ```**, then in the headers introduce Key:**"Authorization"** and Value: **"JWT YourAccessToken"**, after that you should see the same result as making GET request to **```http://<host:ip>/weather/london/<date>/<hour minute>/```**.
+    * After that copy your access token, and go to **``` http://<host:ip>/weather/london/restricted/<date>/<hour minute> ```**, then in the headers introduce Key:**"Authorization"** and Value: **"JWT YourAccessToken"**, after that you should see the same result as making GET request to **```http://<host:ip>/weather/london/<date>/<hour minute>/```**.
 
 * What would you suggest is needed to do daily forecast recoveries from openweather.org, keeping the web service up to date?
 The best way would be accessing the real API (www.openweathermap.org). This option is already implemented. Now we are going to show the steps for using it:
@@ -135,4 +135,4 @@ The best way would be accessing the real API (www.openweathermap.org). This opti
     
 ## Bonus Points (Optional):
 
-* This API is made public in the following ip address: http://138.68.146.96/ . This first takes you to an html file where you have all steps described to run the API. **The Access restriction is not installed.**
+* This API is made public in the following ip address: http://138.68.146.96/ it has been uploaded to the servers of Digital Ocean. This first takes you to an html file where you have all steps described to run the API. **The Access restriction is not installed.**
