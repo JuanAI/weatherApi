@@ -1,6 +1,6 @@
 # SC_Weather_API
 
-Python flask REST web service providing an API to query the data. For a better explanation of this Api I suggest you to access to http://138.68.146.96/ rather than continue reading this README file.
+Python flask REST web service providing an API to query the data. 
 
 ## Author:  Juan Carlos Hernández Repilado
 
